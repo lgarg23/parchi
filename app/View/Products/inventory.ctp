@@ -21,7 +21,7 @@
 	<tr>
 		<td><?php echo $val['Retail']['product_id']; ?></td>
 		<td><?php echo $val[0]['total_quantity']; ?></td>
-		<td><?php echo $val['Retail']['date']; ?></td>
+		<td><?php echo date('F j, Y', strtotime($val['Retail']['date'])); ?></td>
 	</tr>
 	<?php				
 			}		
