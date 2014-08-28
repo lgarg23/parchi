@@ -1,0 +1,980 @@
+2014-08-20 16:22:34 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /var/www/parchi/index.php(41): require('/var/www/parchi...')
+#2 {main}
+2014-08-20 16:22:34 Error: Fatal Error (1): Class 'AppHelper' not found in [/var/www/parchi/lib/Cake/View/Helper/HtmlHelper.php, line 32]
+2014-08-20 16:22:34 Error: [FatalErrorException] Class 'AppHelper' not found
+Request URL: /
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'AppHelpe...', '/var/www/parchi...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AppHelpe...', '/var/www/parchi...', 32, Array)
+#2 /var/www/parchi/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'AppHelpe...', '/var/www/parchi...', 32, Array)
+#3 /var/www/parchi/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-20 16:22:38 Error: [MissingControllerException] Controller class PagesController could not be found.
+Exception Attributes: array (
+  'class' => 'PagesController',
+  'plugin' => NULL,
+)
+Request URL: /
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /var/www/parchi/index.php(41): require('/var/www/parchi...')
+#2 {main}
+2014-08-20 16:22:38 Error: Fatal Error (1): Class 'AppHelper' not found in [/var/www/parchi/lib/Cake/View/Helper/HtmlHelper.php, line 32]
+2014-08-20 16:22:38 Error: [FatalErrorException] Class 'AppHelper' not found
+Request URL: /
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Class 'AppHelpe...', '/var/www/parchi...', 32)
+#1 [internal function]: ErrorHandler::handleError(1, 'Class 'AppHelpe...', '/var/www/parchi...', 32, Array)
+#2 /var/www/parchi/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Class 'AppHelpe...', '/var/www/parchi...', 32, Array)
+#3 /var/www/parchi/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-20 16:42:03 Error: [MissingControllerException] Controller class ProductsController could not be found.
+Exception Attributes: array (
+  'class' => 'ProductsController',
+  'plugin' => NULL,
+)
+Request URL: /products/edit/53f48246-c308-4429-bca9-275c7bcd81db
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-20 18:29:42 Error: [MissingActionException] Action Products::print() could not be found.
+Exception Attributes: array (
+  'controller' => 'Products',
+  'action' => 'print',
+)
+Request URL: /products/print
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Controller/Scaffold.php(150): Scaffold->_scaffold(Object(CakeRequest))
+#1 /var/www/parchi/lib/Cake/Controller/Controller.php(535): Scaffold->__construct(Object(ProductsController), Object(CakeRequest))
+#2 /var/www/parchi/lib/Cake/Controller/Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#3 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#4 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#5 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2014-08-20 18:29:54 Error: Fatal Error (1): Call to a member function find() on a non-object in [/var/www/parchi/app/Controller/ProductsController.php, line 10]
+2014-08-20 18:29:54 Error: [FatalErrorException] Call to a member function find() on a non-object
+Request URL: /products/print_p
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/parchi...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/parchi...', 10, Array)
+#2 /var/www/parchi/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/parchi...', 10, Array)
+#3 /var/www/parchi/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-21 12:25:22 Error: Fatal Error (4): syntax error, unexpected ';', expecting T_STRING or T_VARIABLE or '{' or '$' in [/var/www/parchi/app/View/Products/print_p.ctp, line 4]
+2014-08-21 12:25:22 Error: [FatalErrorException] syntax error, unexpected ';', expecting T_STRING or T_VARIABLE or '{' or '$'
+Request URL: /products/print_p
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/parchi...', 4)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/parchi...', 4, Array)
+#2 /var/www/parchi/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/parchi...', 4, Array)
+#3 /var/www/parchi/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-21 12:47:26 Error: [MissingHelperException] Helper class CustomHelper could not be found.
+Exception Attributes: array (
+  'class' => 'CustomHelper',
+  'plugin' => false,
+)
+Request URL: /products/print_p
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/View/HelperCollection.php(63): HelperCollection->load('Custom')
+#1 /var/www/parchi/lib/Cake/View/View.php(837): HelperCollection->__isset('Custom')
+#2 /var/www/parchi/app/View/Products/print_p.ctp(17): View->__get('Custom')
+#3 /var/www/parchi/lib/Cake/View/View.php(948): include('/var/www/parchi...')
+#4 /var/www/parchi/lib/Cake/View/View.php(910): View->_evaluate('/var/www/parchi...', Array)
+#5 /var/www/parchi/lib/Cake/View/View.php(471): View->_render('/var/www/parchi...')
+#6 /var/www/parchi/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#7 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#8 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#9 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-08-21 16:37:40 Error: Fatal Error (1): Cannot access empty property in [/var/www/parchi/lib/Cake/Controller/Controller.php, line 437]
+2014-08-21 16:37:40 Error: [FatalErrorException] Cannot access empty property
+Request URL: /products/print_p
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Cannot access e...', '/var/www/parchi...', 437)
+#1 [internal function]: ErrorHandler::handleError(1, 'Cannot access e...', '/var/www/parchi...', 437, Array)
+#2 /var/www/parchi/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Cannot access e...', '/var/www/parchi...', 437, Array)
+#3 /var/www/parchi/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-22 11:14:17 Error: [NotFoundException] Not Found
+Request URL: /
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/View/View.php(948): include()
+#1 /var/www/parchi/lib/Cake/View/View.php(910): View->_evaluate('/var/www/parchi...', Array)
+#2 /var/www/parchi/lib/Cake/View/View.php(471): View->_render('/var/www/parchi...')
+#3 /var/www/parchi/lib/Cake/Controller/Controller.php(954): View->render('home', NULL)
+#4 /var/www/parchi/app/Controller/PagesController.php(69): Controller->render('home')
+#5 [internal function]: PagesController->display('home')
+#6 /var/www/parchi/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#7 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#9 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-08-22 11:14:56 Error: [NotFoundException] Not Found
+Request URL: /
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/View/View.php(948): include()
+#1 /var/www/parchi/lib/Cake/View/View.php(910): View->_evaluate('/var/www/parchi...', Array)
+#2 /var/www/parchi/lib/Cake/View/View.php(471): View->_render('/var/www/parchi...')
+#3 /var/www/parchi/lib/Cake/Controller/Controller.php(954): View->render('home', NULL)
+#4 /var/www/parchi/app/Controller/PagesController.php(69): Controller->render('home')
+#5 [internal function]: PagesController->display('home')
+#6 /var/www/parchi/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#7 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#9 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-08-22 12:11:51 Error: [MissingTableException] Table retails for model Retail was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'retails',
+  'class' => 'Retail',
+  'ds' => 'default',
+)
+Request URL: /products/print_p
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Model/Model.php(3547): Model->setSource('retails')
+#1 /var/www/parchi/lib/Cake/Model/Model.php(1365): Model->getDataSource()
+#2 /var/www/parchi/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#3 /var/www/parchi/lib/Cake/View/Helper/FormHelper.php(1284): FormHelper->_introspectModel('Retail', 'fields', 'product_id')
+#4 /var/www/parchi/lib/Cake/View/Helper/FormHelper.php(1231): FormHelper->_maxLength(Array)
+#5 /var/www/parchi/lib/Cake/View/Helper/FormHelper.php(1121): FormHelper->_magicOptions(Array)
+#6 /var/www/parchi/lib/Cake/View/Helper/FormHelper.php(1001): FormHelper->_parseOptions(Array)
+#7 /var/www/parchi/app/View/Products/print_p.ctp(37): FormHelper->input('Retail.0.produc...', Array)
+#8 /var/www/parchi/lib/Cake/View/View.php(948): include('/var/www/parchi...')
+#9 /var/www/parchi/lib/Cake/View/View.php(910): View->_evaluate('/var/www/parchi...', Array)
+#10 /var/www/parchi/lib/Cake/View/View.php(471): View->_render('/var/www/parchi...')
+#11 /var/www/parchi/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#12 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#13 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#14 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-08-22 12:11:58 Error: [MissingTableException] Table retails for model Retail was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'retails',
+  'class' => 'Retail',
+  'ds' => 'default',
+)
+Request URL: /products/print_p/?debug=2
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Model/Model.php(3547): Model->setSource('retails')
+#1 /var/www/parchi/lib/Cake/Model/Model.php(1365): Model->getDataSource()
+#2 /var/www/parchi/lib/Cake/View/Helper/FormHelper.php(215): Model->schema()
+#3 /var/www/parchi/lib/Cake/View/Helper/FormHelper.php(1284): FormHelper->_introspectModel('Retail', 'fields', 'product_id')
+#4 /var/www/parchi/lib/Cake/View/Helper/FormHelper.php(1231): FormHelper->_maxLength(Array)
+#5 /var/www/parchi/lib/Cake/View/Helper/FormHelper.php(1121): FormHelper->_magicOptions(Array)
+#6 /var/www/parchi/lib/Cake/View/Helper/FormHelper.php(1001): FormHelper->_parseOptions(Array)
+#7 /var/www/parchi/app/View/Products/print_p.ctp(37): FormHelper->input('Retail.0.produc...', Array)
+#8 /var/www/parchi/lib/Cake/View/View.php(948): include('/var/www/parchi...')
+#9 /var/www/parchi/lib/Cake/View/View.php(910): View->_evaluate('/var/www/parchi...', Array)
+#10 /var/www/parchi/lib/Cake/View/View.php(471): View->_render('/var/www/parchi...')
+#11 /var/www/parchi/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#12 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#13 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#14 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-08-22 12:12:31 Error: Fatal Error (1): Call to undefined method ProductsController::setFlash() in [/var/www/parchi/app/Controller/ProductsController.php, line 29]
+2014-08-22 12:12:31 Error: [FatalErrorException] Call to undefined method ProductsController::setFlash()
+Request URL: /products/print_p
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to undefin...', '/var/www/parchi...', 29)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to undefin...', '/var/www/parchi...', 29, Array)
+#2 /var/www/parchi/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to undefin...', '/var/www/parchi...', 29, Array)
+#3 /var/www/parchi/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-22 16:59:38 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'paginate' at line 1
+Request URL: /products
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('paginate', Array)
+#2 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('paginate', Array, Array)
+#3 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('paginate', Array, Array)
+#4 /var/www/parchi/lib/Cake/Model/Model.php(808): DboSource->query('paginate', Array, Object(Product))
+#5 /var/www/parchi/app/Controller/ProductsController.php(10): Model->__call('paginate', Array)
+#6 /var/www/parchi/app/Controller/ProductsController.php(10): Product->paginate()
+#7 [internal function]: ProductsController->index()
+#8 /var/www/parchi/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#9 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#11 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-08-22 17:01:53 Error: Fatal Error (1): Call to a member function paginate() on a non-object in [/var/www/parchi/app/Controller/ProductsController.php, line 10]
+2014-08-22 17:01:53 Error: [FatalErrorException] Call to a member function paginate() on a non-object
+Request URL: /products
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(1, 'Call to a membe...', '/var/www/parchi...', 10)
+#1 [internal function]: ErrorHandler::handleError(1, 'Call to a membe...', '/var/www/parchi...', 10, Array)
+#2 /var/www/parchi/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 1, 'Call to a membe...', '/var/www/parchi...', 10, Array)
+#3 /var/www/parchi/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-22 17:02:03 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'paginate' at line 1
+Request URL: /products
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('paginate', Array)
+#2 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('paginate', Array, Array)
+#3 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('paginate', Array, Array)
+#4 /var/www/parchi/lib/Cake/Model/Model.php(808): DboSource->query('paginate', Array, Object(Product))
+#5 /var/www/parchi/app/Controller/ProductsController.php(10): Model->__call('paginate', Array)
+#6 /var/www/parchi/app/Controller/ProductsController.php(10): Product->paginate()
+#7 [internal function]: ProductsController->index()
+#8 /var/www/parchi/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#9 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#11 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-08-22 17:05:22 Error: [PDOException] SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'paginate' at line 1
+Request URL: /products
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('paginate', Array)
+#2 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('paginate', Array, Array)
+#3 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(609): DboSource->fetchAll('paginate', Array, Array)
+#4 /var/www/parchi/lib/Cake/Model/Model.php(808): DboSource->query('paginate', Array, Object(Product))
+#5 /var/www/parchi/app/Controller/ProductsController.php(11): Model->__call('paginate', Array)
+#6 /var/www/parchi/app/Controller/ProductsController.php(11): Product->paginate()
+#7 [internal function]: ProductsController->index()
+#8 /var/www/parchi/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#9 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#11 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-08-25 16:33:04 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery-ui-1.8.18.custom.css
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-25 16:33:08 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/jquery-ui-1.8.18.custom.css
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-25 16:33:43 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-bg_glass_75_ffffff_1x400.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-25 16:33:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-25 16:33:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-bg_glass_65_ffffff_1x400.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-25 16:33:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-25 16:33:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-bg_glass_55_fbf9ee_1x400.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-25 16:33:44 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-icons_222222_256x240.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-25 16:33:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-bg_glass_75_dadada_1x400.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-25 16:51:46 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-bg_glass_75_ffffff_1x400.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-25 16:52:47 Warning: Warning (2): wordwrap() [http://php.net/function.wordwrap]: Break string cannot be empty in [/var/www/parchi/app/View/Products/print_parchi.ctp, line 36]
+Trace:
+wordwrap - [internal], line ??
+include - APP/View/Products/print_parchi.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+ProductsController::print_p() - APP/Controller/ProductsController.php, line 30
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-08-25 16:52:47 Warning: Warning (2): wordwrap() [http://php.net/function.wordwrap]: Break string cannot be empty in [/var/www/parchi/app/View/Products/print_parchi.ctp, line 36]
+Trace:
+wordwrap - [internal], line ??
+include - APP/View/Products/print_parchi.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+ProductsController::print_p() - APP/Controller/ProductsController.php, line 30
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-08-25 16:53:51 Warning: Warning (2): wordwrap() [http://php.net/function.wordwrap]: Break string cannot be empty in [/var/www/parchi/app/View/Products/print_parchi.ctp, line 36]
+Trace:
+wordwrap - [internal], line ??
+include - APP/View/Products/print_parchi.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+ProductsController::print_p() - APP/Controller/ProductsController.php, line 30
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-08-25 16:53:51 Warning: Warning (2): wordwrap() [http://php.net/function.wordwrap]: Break string cannot be empty in [/var/www/parchi/app/View/Products/print_parchi.ctp, line 36]
+Trace:
+wordwrap - [internal], line ??
+include - APP/View/Products/print_parchi.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+ProductsController::print_p() - APP/Controller/ProductsController.php, line 30
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-08-25 16:55:41 Warning: Warning (2): wordwrap() [http://php.net/function.wordwrap]: Break string cannot be empty in [/var/www/parchi/app/View/Products/print_parchi.ctp, line 36]
+Trace:
+wordwrap - [internal], line ??
+include - APP/View/Products/print_parchi.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+ProductsController::print_p() - APP/Controller/ProductsController.php, line 30
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-08-25 16:55:41 Warning: Warning (2): wordwrap() [http://php.net/function.wordwrap]: Break string cannot be empty in [/var/www/parchi/app/View/Products/print_parchi.ctp, line 36]
+Trace:
+wordwrap - [internal], line ??
+include - APP/View/Products/print_parchi.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+ProductsController::print_p() - APP/Controller/ProductsController.php, line 30
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-08-25 16:56:11 Warning: Warning (2): wordwrap() [http://php.net/function.wordwrap]: Break string cannot be empty in [/var/www/parchi/app/View/Products/print_parchi.ctp, line 36]
+Trace:
+wordwrap - [internal], line ??
+include - APP/View/Products/print_parchi.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+ProductsController::print_p() - APP/Controller/ProductsController.php, line 30
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-08-25 16:56:11 Warning: Warning (2): wordwrap() [http://php.net/function.wordwrap]: Break string cannot be empty in [/var/www/parchi/app/View/Products/print_parchi.ctp, line 36]
+Trace:
+wordwrap - [internal], line ??
+include - APP/View/Products/print_parchi.ctp, line 36
+View::_evaluate() - CORE/Cake/View/View.php, line 948
+View::_render() - CORE/Cake/View/View.php, line 910
+View::render() - CORE/Cake/View/View.php, line 471
+Controller::render() - CORE/Cake/Controller/Controller.php, line 954
+ProductsController::print_p() - APP/Controller/ProductsController.php, line 30
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 490
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 191
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 165
+[main] - APP/webroot/index.php, line 108
+
+2014-08-25 17:35:49 Error: Fatal Error (4): syntax error, unexpected '[', expecting ',' or ';' in [/var/www/parchi/app/View/Products/print_parchi.ctp, line 15]
+2014-08-25 17:35:49 Error: [FatalErrorException] syntax error, unexpected '[', expecting ',' or ';'
+Request URL: /products/print_p
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/var/www/parchi...', 15)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/var/www/parchi...', 15, Array)
+#2 /var/www/parchi/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/var/www/parchi...', 15, Array)
+#3 /var/www/parchi/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2014-08-25 18:44:40 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2003] Can\'t connect to MySQL server on \'128.199.194.44\' (111)',
+  'enabled' => true,
+)
+Request URL: /products/print_p
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/parchi/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/parchi/lib/Cake/Model/Model.php(3520): ConnectionManager::getDataSource('default')
+#3 /var/www/parchi/lib/Cake/Model/Model.php(1136): Model->setDataSource('default')
+#4 /var/www/parchi/lib/Cake/Model/Model.php(3547): Model->setSource('retails')
+#5 /var/www/parchi/lib/Cake/Model/Model.php(2943): Model->getDataSource()
+#6 /var/www/parchi/lib/Cake/Model/Model.php(2915): Model->_readDataSource('first', Array)
+#7 /var/www/parchi/app/Controller/ProductsController.php(38): Model->find('first', Array)
+#8 [internal function]: ProductsController->print_p()
+#9 /var/www/parchi/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#10 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#12 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-08-25 18:44:41 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2003] Can\'t connect to MySQL server on \'128.199.194.44\' (111)',
+  'enabled' => true,
+)
+Request URL: /products
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/parchi/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/parchi/lib/Cake/Model/Model.php(3520): ConnectionManager::getDataSource('default')
+#3 /var/www/parchi/lib/Cake/Model/Model.php(1136): Model->setDataSource('default')
+#4 /var/www/parchi/lib/Cake/Model/Model.php(3547): Model->setSource('products')
+#5 /var/www/parchi/lib/Cake/Model/Model.php(1365): Model->getDataSource()
+#6 /var/www/parchi/lib/Cake/Model/Model.php(1457): Model->schema()
+#7 /var/www/parchi/lib/Cake/Model/Model.php(1444): Model->hasField('title', false)
+#8 /var/www/parchi/lib/Cake/Model/Model.php(888): Model->hasField(Array)
+#9 /var/www/parchi/lib/Cake/Controller/Scaffold.php(130): Model->__get('displayField')
+#10 /var/www/parchi/lib/Cake/Controller/Controller.php(535): Scaffold->__construct(Object(ProductsController), Object(CakeRequest))
+#11 /var/www/parchi/lib/Cake/Controller/Controller.php(494): Controller->_getScaffold(Object(CakeRequest))
+#12 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#13 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#14 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2014-08-25 18:52:08 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2003] Can\'t connect to MySQL server on \'128.199.194.44\' (111)',
+  'enabled' => true,
+)
+Request URL: /products/inventory
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/parchi/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/parchi/lib/Cake/Model/Model.php(3520): ConnectionManager::getDataSource('default')
+#3 /var/www/parchi/lib/Cake/Model/Model.php(1136): Model->setDataSource('default')
+#4 /var/www/parchi/lib/Cake/Model/Model.php(3547): Model->setSource('retails')
+#5 /var/www/parchi/lib/Cake/Model/Model.php(2943): Model->getDataSource()
+#6 /var/www/parchi/lib/Cake/Model/Model.php(2915): Model->_readDataSource('all', Array)
+#7 /var/www/parchi/app/Controller/ProductsController.php(71): Model->find('all', Array)
+#8 [internal function]: ProductsController->inventory()
+#9 /var/www/parchi/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#10 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#12 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-08-25 18:52:47 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2005] Unknown MySQL server host \'http://128.199.194.44/phpmyadmin/import.php#PMAURL-6:index.php?db=&table=&server=1&target=&token=787\' (2)',
+  'enabled' => true,
+)
+Request URL: /products/inventory/date:2014-08-22
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/parchi/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/parchi/lib/Cake/Model/Model.php(3520): ConnectionManager::getDataSource('default')
+#3 /var/www/parchi/lib/Cake/Model/Model.php(1136): Model->setDataSource('default')
+#4 /var/www/parchi/lib/Cake/Model/Model.php(3547): Model->setSource('retails')
+#5 /var/www/parchi/lib/Cake/Model/Model.php(2943): Model->getDataSource()
+#6 /var/www/parchi/lib/Cake/Model/Model.php(2915): Model->_readDataSource('all', Array)
+#7 /var/www/parchi/app/Controller/ProductsController.php(66): Model->find('all', Array)
+#8 [internal function]: ProductsController->inventory()
+#9 /var/www/parchi/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#10 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#12 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-08-25 18:59:57 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2005] Unknown MySQL server host \'128.199.194.44:3306\' (2)',
+  'enabled' => true,
+)
+Request URL: /products/inventory/date:2014-08-22
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/parchi/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/parchi/lib/Cake/Model/Model.php(3520): ConnectionManager::getDataSource('default')
+#3 /var/www/parchi/lib/Cake/Model/Model.php(1136): Model->setDataSource('default')
+#4 /var/www/parchi/lib/Cake/Model/Model.php(3547): Model->setSource('retails')
+#5 /var/www/parchi/lib/Cake/Model/Model.php(2943): Model->getDataSource()
+#6 /var/www/parchi/lib/Cake/Model/Model.php(2915): Model->_readDataSource('all', Array)
+#7 /var/www/parchi/app/Controller/ProductsController.php(66): Model->find('all', Array)
+#8 [internal function]: ProductsController->inventory()
+#9 /var/www/parchi/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#10 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#12 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-08-25 19:14:09 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2005] Unknown MySQL server host \'128.199.194.44:3306\' (2)',
+  'enabled' => true,
+)
+Request URL: /products/print_p
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /var/www/parchi/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /var/www/parchi/lib/Cake/Model/Model.php(3520): ConnectionManager::getDataSource('default')
+#3 /var/www/parchi/lib/Cake/Model/Model.php(1136): Model->setDataSource('default')
+#4 /var/www/parchi/lib/Cake/Model/Model.php(3547): Model->setSource('retails')
+#5 /var/www/parchi/lib/Cake/Model/Model.php(2943): Model->getDataSource()
+#6 /var/www/parchi/lib/Cake/Model/Model.php(2915): Model->_readDataSource('first', Array)
+#7 /var/www/parchi/app/Controller/ProductsController.php(38): Model->find('first', Array)
+#8 [internal function]: ProductsController->print_p()
+#9 /var/www/parchi/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#10 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#11 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#12 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#13 {main}
+2014-08-25 19:16:33 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-bg_glass_75_ffffff_1x400.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-25 19:16:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-25 19:16:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-bg_glass_55_fbf9ee_1x400.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-25 19:16:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-25 19:16:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-icons_222222_256x240.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-25 19:16:36 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-bg_glass_75_dadada_1x400.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-27 15:11:04 Error: [NotFoundException] Not Found
+Request URL: /
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/View/View.php(948): include()
+#1 /var/www/parchi/lib/Cake/View/View.php(910): View->_evaluate('/var/www/parchi...', Array)
+#2 /var/www/parchi/lib/Cake/View/View.php(471): View->_render('/var/www/parchi...')
+#3 /var/www/parchi/lib/Cake/Controller/Controller.php(954): View->render('home', NULL)
+#4 /var/www/parchi/app/Controller/PagesController.php(69): Controller->render('home')
+#5 [internal function]: PagesController->display('home')
+#6 /var/www/parchi/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#7 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#9 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-08-27 15:11:50 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-bg_glass_75_ffffff_1x400.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-27 15:12:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-27 15:12:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-bg_glass_55_fbf9ee_1x400.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-27 15:12:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-icons_222222_256x240.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-27 15:12:15 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-27 15:12:19 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-bg_glass_75_dadada_1x400.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-27 15:15:23 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-bg_glass_75_ffffff_1x400.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-27 15:20:19 Error: [NotFoundException] Not Found
+Request URL: /
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/View/View.php(948): include()
+#1 /var/www/parchi/lib/Cake/View/View.php(910): View->_evaluate('/var/www/parchi...', Array)
+#2 /var/www/parchi/lib/Cake/View/View.php(471): View->_render('/var/www/parchi...')
+#3 /var/www/parchi/lib/Cake/Controller/Controller.php(954): View->render('home', NULL)
+#4 /var/www/parchi/app/Controller/PagesController.php(69): Controller->render('home')
+#5 [internal function]: PagesController->display('home')
+#6 /var/www/parchi/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(PagesController), Array)
+#7 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(PagesController), Object(CakeRequest))
+#9 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 {main}
+2014-08-27 16:02:26 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-bg_glass_75_ffffff_1x400.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-27 16:02:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-bg_glass_75_e6e6e6_1x400.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-27 16:02:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-bg_highlight-soft_75_cccccc_1x100.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-27 16:02:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-icons_222222_256x240.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-27 16:02:28 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-bg_glass_55_fbf9ee_1x400.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-27 16:02:29 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/images/ui-bg_glass_75_dadada_1x400.png
+Stack Trace:
+#0 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2014-08-27 16:55:42 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Retail.party_id' in 'field list'
+Request URL: /products/print_p
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Retail`...', Array)
+#2 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Retail`...', Array, Array)
+#3 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Retail`...', false)
+#4 /var/www/parchi/lib/Cake/Model/Model.php(2943): DboSource->read(Object(Retail), Array)
+#5 /var/www/parchi/lib/Cake/Model/Model.php(2915): Model->_readDataSource('first', Array)
+#6 /var/www/parchi/app/Controller/ProductsController.php(37): Model->find('first', Array)
+#7 [internal function]: ProductsController->print_p()
+#8 /var/www/parchi/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#9 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#11 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-08-27 16:58:58 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Retail.party_id' in 'field list'
+Request URL: /products/print_p
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Retail`...', Array)
+#2 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Retail`...', Array, Array)
+#3 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Retail`...', false)
+#4 /var/www/parchi/lib/Cake/Model/Model.php(2943): DboSource->read(Object(Retail), Array)
+#5 /var/www/parchi/lib/Cake/Model/Model.php(2915): Model->_readDataSource('first', Array)
+#6 /var/www/parchi/app/Controller/ProductsController.php(42): Model->find('first', Array)
+#7 [internal function]: ProductsController->print_p()
+#8 /var/www/parchi/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#9 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#11 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-08-27 16:59:02 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Retail.party_id' in 'field list'
+Request URL: /products/print_p/?debug=2
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Retail`...', Array)
+#2 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Retail`...', Array, Array)
+#3 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Retail`...', false)
+#4 /var/www/parchi/lib/Cake/Model/Model.php(2943): DboSource->read(Object(Retail), Array)
+#5 /var/www/parchi/lib/Cake/Model/Model.php(2915): Model->_readDataSource('first', Array)
+#6 /var/www/parchi/app/Controller/ProductsController.php(42): Model->find('first', Array)
+#7 [internal function]: ProductsController->print_p()
+#8 /var/www/parchi/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#9 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#11 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-08-28 12:12:08 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'price' cannot be null
+Request URL: /products/print_p
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `pa...', Array)
+#2 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `pa...')
+#3 /var/www/parchi/lib/Cake/Model/Model.php(1850): DboSource->create(Object(Product), Array, Array)
+#4 /var/www/parchi/lib/Cake/Model/Model.php(2261): Model->save(Array, Array)
+#5 /var/www/parchi/lib/Cake/Model/Model.php(2189): Model->saveMany(Array, Array)
+#6 /var/www/parchi/app/Controller/ProductsController.php(37): Model->saveAll(Array)
+#7 [internal function]: ProductsController->print_p()
+#8 /var/www/parchi/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#9 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#11 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-08-28 17:06:08 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Retail.party_id' in 'on clause'
+Request URL: /products/inventory
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Retail`...', Array)
+#2 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Retail`...', Array, Array)
+#3 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Retail`...', false)
+#4 /var/www/parchi/lib/Cake/Model/Model.php(2943): DboSource->read(Object(Retail), Array)
+#5 /var/www/parchi/lib/Cake/Model/Model.php(2915): Model->_readDataSource('all', Array)
+#6 /var/www/parchi/app/Controller/ProductsController.php(87): Model->find('all', Array)
+#7 [internal function]: ProductsController->inventory()
+#8 /var/www/parchi/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#9 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#11 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-08-28 17:06:47 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Retail.party_id' in 'on clause'
+Request URL: /products/inventory
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Retail`...', Array)
+#2 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Retail`...', Array, Array)
+#3 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Retail`...', false)
+#4 /var/www/parchi/lib/Cake/Model/Model.php(2943): DboSource->read(Object(Retail), Array)
+#5 /var/www/parchi/lib/Cake/Model/Model.php(2915): Model->_readDataSource('all', Array)
+#6 /var/www/parchi/app/Controller/ProductsController.php(87): Model->find('all', Array)
+#7 [internal function]: ProductsController->inventory()
+#8 /var/www/parchi/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#9 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#11 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-08-28 17:07:09 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Retail.party_id' in 'on clause'
+Request URL: /products/inventory
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Retail`...', Array)
+#2 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Retail`...', Array, Array)
+#3 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Retail`...', false)
+#4 /var/www/parchi/lib/Cake/Model/Model.php(2943): DboSource->read(Object(Retail), Array)
+#5 /var/www/parchi/lib/Cake/Model/Model.php(2915): Model->_readDataSource('all', Array)
+#6 /var/www/parchi/app/Controller/ProductsController.php(87): Model->find('all', Array)
+#7 [internal function]: ProductsController->inventory()
+#8 /var/www/parchi/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#9 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#11 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-08-28 17:07:12 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'Retail.party_id' in 'on clause'
+Request URL: /products/inventory
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('SELECT `Retail`...', Array)
+#2 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(666): DboSource->execute('SELECT `Retail`...', Array, Array)
+#3 /var/www/parchi/lib/Cake/Model/Datasource/DboSource.php(1106): DboSource->fetchAll('SELECT `Retail`...', false)
+#4 /var/www/parchi/lib/Cake/Model/Model.php(2943): DboSource->read(Object(Retail), Array)
+#5 /var/www/parchi/lib/Cake/Model/Model.php(2915): Model->_readDataSource('all', Array)
+#6 /var/www/parchi/app/Controller/ProductsController.php(87): Model->find('all', Array)
+#7 [internal function]: ProductsController->inventory()
+#8 /var/www/parchi/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(ProductsController), Array)
+#9 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#10 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#11 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#12 {main}
+2014-08-28 18:09:43 Error: [MissingActionException] Action ProductsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'view',
+)
+Request URL: /products/view
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-28 18:09:56 Error: [MissingActionException] Action ProductsController::view() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'view',
+)
+Request URL: /products/view
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-28 18:10:17 Error: [MissingActionException] Action ProductsController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'add',
+)
+Request URL: /products/add/Rice2
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2014-08-28 18:33:42 Error: [MissingActionException] Action ProductsController::delete() could not be found.
+Exception Attributes: array (
+  'controller' => 'ProductsController',
+  'action' => 'delete',
+)
+Request URL: /products/delete/53f48246-c308-4429-bca9-275c7bcd81db
+Stack Trace:
+#0 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /var/www/parchi/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ProductsController), Object(CakeRequest))
+#2 /var/www/parchi/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
