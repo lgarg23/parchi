@@ -30,4 +30,11 @@ App::uses('Model', 'Model');
  * @package       app.Model
  */
 class AppModel extends Model {
+	
+	public function beforeSave(){
+		if($this->name == 'Product' || $this->name == 'Retail' || $this->name == 'Party' || $this->name == 'ItemGroup'){
+			$this->data[$this->name]['user_id'] = CakeSession::read('Auth.User.id');	
+		}
+	}
+	
 }

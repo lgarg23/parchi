@@ -3,7 +3,6 @@
 	<fieldset>
  		<legend><?php __('Add Product'); ?></legend>
 	<?php
-		echo $this->Form->input('item_group');
 		echo $this->Form->input('name', array('value' => $name));
 		echo $this->Form->input('net_quantity');
 		echo $this->Form->input('unit');
@@ -19,19 +18,3 @@
 		<li><?php echo $this->Html->link(__('List Products', true), array('action' => 'index'));?></li>
 	</ul>
 </div>
-<script>
-	$(document).ready(function(){
-		var item_groups_arr = [];
-		var item_groups = <?php echo json_encode($item_groups); ?>;
-		
-		$.each(item_groups, function(key, val){
-			if(val != "" && val != null){
-				item_groups_arr.push(val);
-			}
-		});
-		
-		$("#ProductItemGroup").autocomplete({
-	      	source : item_groups_arr
-		});
-	});
-</script>

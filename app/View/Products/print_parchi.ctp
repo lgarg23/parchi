@@ -2,7 +2,7 @@
 	echo $this->fetch('script');
 	echo $this->Html->script('jquery.min');
 ?>
-<table style = "max-width: 40%;font-size:10px;width: 40%;">
+<table style = "max-width:40%;font-size:10px;width:40%;text-align:center;margin-left: 180px;margin-top: 350px;">
 	<tr>
 		<td colspan = "5" style = "text-align:center;"><b>Order</b></td>
 	</tr>
@@ -12,11 +12,11 @@
 	</tr>
 	<tr>
 		<td colspan = "2"><b>Voucher No.</b></td>
-		<td colspan = "3"><?php echo $data['Retail'][0]['order'];?></td>
+		<td colspan = "3"><?php echo $voucher_number;?></td>
 	</tr>
 	<tr>
 		<td colspan = "2"><b>Date</b></td>
-		<td colspan = "3"><?php echo date('F j, Y'); ?></td>
+		<td colspan = "3"><?php echo date('d-m-Y'); ?></td>
 	</tr>
 	 
 	<tr style = "border-bottom: 1px solid;">
@@ -84,6 +84,9 @@
 </style>
 <script>
 	$(document).ready(function(){
+		
 		window.print();
+		window.location.href = "/";		
 	});
+	
 </script>

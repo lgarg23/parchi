@@ -4,7 +4,6 @@
  		<legend><?php __('Edit Product'); ?></legend>
 	<?php
 		echo $this->Form->input('id');
-		echo $this->Form->input('item_group');
 		echo $this->Form->input('name');
 		echo $this->Form->input('net_quantity', array('readOnly' => true));
 		echo $this->Form->input('unit');

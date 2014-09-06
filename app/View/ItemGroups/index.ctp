@@ -1,7 +1,7 @@
 <div class="products index" style = "width: 100%;border:none;">
 	<h2><?php __('Products');?></h2>
 	<?php $params = $this->request->params['named']; ?>
-	<div class="actions header-none" style = "width:100%;">
+	<div class="actions print_none" style = "width:100%;" id = "header-none">
 		<input type = "text" class = "product_name print_none" id = "product_name" style = "width: 220px;height: 25px;" placeholder = "Product Name"/>
 		<?php echo $this->Html->link(__('Add Item', true), array('action' => 'view'), array('id' => 'add', 'class' => 'print_none')); ?>
 		<?php echo $this->Html->link(__('Edit Item', true), array('action' => 'view'), array('id' => 'edit', 'class' => 'print_none')); ?>
@@ -11,7 +11,6 @@
 	<?php if(isset($params['search']) && $params['search'] != ''){ ?>		
 		<table cellpadding="0" cellspacing="0">
 		<tr>
-				<th><?php echo $this->Paginator->sort('item_group');?></th>
 				<th><?php echo $this->Paginator->sort('name');?></th>
 				<th><?php echo $this->Paginator->sort('net_quantity');?></th>
 				<th><?php echo $this->Paginator->sort('price');?></th>
@@ -28,7 +27,6 @@
 			}
 		?>
 		<tr<?php echo $class;?>>
-			<td><?php echo wordwrap($product['Product']['item_group'], 15, " ", true); ?>&nbsp;</td>	
 			<td><?php echo wordwrap($product['Product']['name'], 15, " ", true); ?>&nbsp;</td>
 			<td><?php echo $product['Product']['net_quantity']; ?>&nbsp;</td>
 			<td><?php echo $product['Product']['price']; ?>&nbsp;</td>
@@ -43,7 +41,6 @@
 	<?php }else{ ?>
 		<table cellpadding="0" cellspacing="0">
 		<tr>
-				<th><?php echo $this->Paginator->sort('item_group');?></th>
 				<th><?php echo $this->Paginator->sort('name');?></th>
 				<th><?php echo $this->Paginator->sort('net_quantity');?></th>
 				<th class=/"actions"><?php __('Actions');?></th>
@@ -57,7 +54,6 @@
 			}
 		?>
 		<tr<?php echo $class;?>>
-			<td><?php echo wordwrap($product['Product']['item_group'], 15, " ", true); ?>&nbsp;</td>
 			<td><?php echo wordwrap($product['Product']['name'], 15, " ", true); ?>&nbsp;</td>
 			<td><?php echo $product['Product']['net_quantity']; ?>&nbsp;</td>
 			<td class="actions">
@@ -67,7 +63,7 @@
 	<?php endforeach; ?>
 		</table>
 	<?php } ?>
-	<div class="paging header-none">
+	<div class="paging">
 		<?php echo $this->Paginator->prev('<< ' . __('previous', true), array(), null, array('class'=>'disabled'));?>
 	 | 	<?php echo $this->Paginator->numbers();?>
  |
@@ -131,4 +127,7 @@
 	});
 </script>
 <style type="text\css" media="print">
+	#Footer, #Header, #header-none{
+	  display: none;
+	}
 </style>

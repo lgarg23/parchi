@@ -25,19 +25,18 @@
 	</title>
 	<?php
 		echo $this->Html->meta('icon');
+		
+		echo $this->fetch('meta');
+		echo $this->fetch('css');
+		echo $this->fetch('script');
 
 		echo $this->Html->css('cake.generic');
 		echo $this->Html->css('bootstrap-theme.min');
 		echo $this->Html->css('bootstrap.min');
 
-		echo $this->fetch('meta');
-		echo $this->fetch('css');
-		echo $this->fetch('script');
-		echo $this->Html->css('jquery-ui-1.8.18.custom');
 		echo $this->Html->script('jquery.min');
 		echo $this->Html->script('bootstrap.min');
 		echo $this->Html->script('form.modifier');
-		echo $this->Html->script('jquery-ui-1.8.18.custom.min.js');
 		
 	?>
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">

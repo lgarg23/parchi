@@ -17,7 +17,7 @@
 	cellspacing="0">
 	<thead>
 		<tr>
-			<td><?php echo __('Description'); ?></td>
+			<td><?php echo __('Item'); ?></td>
 			<td><?php echo __('Quantity'); ?></td>
 			<td><?php echo __('Unit'); ?></td>
 			<td><?php echo __('Unit Price'); ?></td>
@@ -125,7 +125,9 @@
 		var parties_arr = [];
 		var parties = <?php echo json_encode($parties); ?>;
 		$.each(parties, function(key, val){
-			parties_arr.push(val);
+			if(val != "" && val != null){
+				parties_arr.push(val);
+			}
 		});
 
 		$( "#ParchiPartyName" ).autocomplete({
@@ -135,11 +137,26 @@
 		var products_arr = [];
 		var products = <?php echo json_encode($products); ?>;
 		$.each(products, function(key, val){
-			products_arr.push(val);
+			if(val != "" && val != null){
+				products_arr.push(val);
+			}
 		});
-
+		
 		$("#Retail0ProductId").autocomplete({
 	      	source : products_arr
+		});
+
+		
+		var products_unit_arr = [];
+		var products_unit_a = <?php echo json_encode($products_unit); ?>;
+		$.each(products_unit_a, function(key, val){
+			if(val != "" && val != null){
+				products_unit_arr.push(val);
+			}
+		});
+		console.log(products_unit_arr);
+		$("#Retail0Unit").autocomplete({
+	      	source : products_unit_arr
 		});
 		
 		$('#addMoreItems_link').FormModifier({
@@ -248,6 +265,10 @@
 					});
 					newElem.find('.services[tabindex="'+ check +'"]').autocomplete({
 				      	source : products_arr
+					});
+
+					newElem.find('.unit[tabindex="'+ check +'"]').autocomplete({
+						source : products_unit_arr
 					});
 				});
 				
