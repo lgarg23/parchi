@@ -102,7 +102,6 @@ class ProductsController extends AppController {
 	public function print_p(){
 		if($this->request->is('post')){
 			if(!empty($this->request->data)){
-				$user = $this->User->find('first', array('conditions' => array('User.id' => $this->Auth->user('id')), 'recursive' => -1));
 				
 				$party = $this->Party->find('first', array('conditions' => array('name' => trim($this->request->data['Parchi']['party_name'], " "),
 																'Party.user_id' => $this->Auth->user('id'))));
@@ -141,6 +140,8 @@ class ProductsController extends AppController {
 				$this->Product->saveAll($productToSaveExists);
 				$this->Product->saveAll($productToSave);
 				
+				$user = $this->User->find('first', array('conditions' => array('User.id' => $this->Auth->user('id')), 'recursive' => -1));
+				
 				$interval = $user['User']['last_parchi_date'] - date('Y-m-d');
 				$c = $user['User']['last_parchi_number'];
 				
@@ -153,8 +154,9 @@ class ProductsController extends AppController {
 				
 				$user['User']['last_parchi_date'] = date('Y-m-d');
 				$user['User']['last_parchi_number'] = $parchi_number;
-				
-				$this->User->saveAll($user, array('validate' => false));
+				$this->User->id = $user['User']['id']; 
+				$this->User->saveField('last_parchi_date', $user['User']['last_parchi_date']);
+				$this->User->saveField('last_parchi_number', $user['User']['last_parchi_number']);
 				
 				if($this->Retail->saveAll($this->request->data['Retail'])){
 					
