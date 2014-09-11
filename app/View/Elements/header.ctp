@@ -1,4 +1,5 @@
-<?php if(CakeSession::read('Auth.User.id')){ ?>
+<?php 
+	if(CakeSession::read('Auth.User.id')){ ?>
 <div class="btn-group">
 <?php
 		echo $this->Html->link(
@@ -16,6 +17,12 @@
 		echo $this->Html->link(
 						'Products/Inventory',
 						array('controller' => 'products', 'action' => 'index'),
+						array('class' => 'btn')
+		);
+		
+		echo $this->Html->link(
+						'Search',
+						array('controller' => 'products', 'action' => 'search'),
 						array('class' => 'btn')
 		);
 		

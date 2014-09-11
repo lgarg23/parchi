@@ -30,6 +30,28 @@ class ProductsController extends AppController {
 		$this->set('products_list', $products_list);
 	}
 	
+	public function search(){
+		$conditions = array();
+		$params = $this->request->params['named'];
+		
+		if(isset($params['search']) && !empty($params['search'])){
+			$text = '%' . $params['search'] . '%';
+			$conditions = array('Product.name LIKE ' => $text);	
+		}
+		
+		$conditions[] = array('Product.user_id' => $this->Auth->user('id'));
+		
+		$this->paginate = array(
+			'conditions' => $conditions
+		);
+		
+		$this->set('products', $this->paginate());
+		$products_list = $this->Product->find('list', array('conditions' => array('Product.user_id' => $this->Auth->user('id')),
+													'fields' => array('id', 'name')));
+		
+		$this->set('products_list', $products_list);
+	}
+	
 	public function add($name = ''){
 		if($this->request->is('post')){
 			if($this->Product->save($this->request->data)){
