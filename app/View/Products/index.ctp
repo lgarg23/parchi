@@ -11,12 +11,11 @@
 	<?php if(isset($params['search']) && $params['search'] != ''){ ?>		
 		<table cellpadding="0" cellspacing="0">
 		<tr>
-				<th><?php echo $this->Paginator->sort('item_group');?></th>
-				<th><?php echo $this->Paginator->sort('name');?></th>
-				<th><?php echo $this->Paginator->sort('net_quantity');?></th>
-				<th><?php echo $this->Paginator->sort('price');?></th>
-				<th><?php echo $this->Paginator->sort('created');?></th>
-				<th><?php echo $this->Paginator->sort('modified');?></th>
+				<th><?php echo 'Name';?></th>
+				<th><?php echo 'Net Quantity';?></th>
+				<th><?php echo 'Price';?></th>
+				<th><?php echo 'Created';?></th>
+				<th><?php echo 'Modified';?></th>
 				<th class=/"actions"><?php __('Actions');?></th>
 		</tr>
 		<?php
@@ -28,7 +27,6 @@
 			}
 		?>
 		<tr<?php echo $class;?>>
-			<td><?php echo wordwrap($product['Product']['item_group'], 15, " ", true); ?>&nbsp;</td>	
 			<td><?php echo wordwrap($product['Product']['name'], 15, " ", true); ?>&nbsp;</td>
 			<td><?php echo $product['Product']['net_quantity']; ?>&nbsp;</td>
 			<td><?php echo $product['Product']['price']; ?>&nbsp;</td>
@@ -43,10 +41,9 @@
 	<?php }else{ ?>
 		<table cellpadding="0" cellspacing="0">
 		<tr>
-				<th><?php echo $this->Paginator->sort('item_group');?></th>
-				<th><?php echo $this->Paginator->sort('name');?></th>
-				<th><?php echo $this->Paginator->sort('net_quantity');?></th>
-				<th class=/"actions"><?php __('Actions');?></th>
+			<th><?php echo 'Name';?></th>
+			<th><?php echo 'Net Quantity';?></th>
+			<th class=/"actions"><?php __('Actions');?></th>
 		</tr>
 		<?php
 		$i = 0;
@@ -57,7 +54,6 @@
 			}
 		?>
 		<tr<?php echo $class;?>>
-			<td><?php echo wordwrap($product['Product']['item_group'], 15, " ", true); ?>&nbsp;</td>
 			<td><?php echo wordwrap($product['Product']['name'], 15, " ", true); ?>&nbsp;</td>
 			<td><?php echo $product['Product']['net_quantity']; ?>&nbsp;</td>
 			<td class="actions">

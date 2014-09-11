@@ -742,8 +742,15 @@ pre {
 #url-rewriting-warning {
 	display:none;
 }
+
 @media print {
    #Footer, #Header,.header-none, #header{
   		display: none !important;
 	}
+	
+	.actions{
+		display : none !important;
+	}
+	
 }
+

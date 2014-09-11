@@ -2,7 +2,7 @@
 class ProductsController extends AppController {
 
 	var $name = 'Products';
-	var $uses = array('Product', 'Party', 'Retail', 'ItemGroup', 'User');
+	var $uses = array('Product', 'Party', 'Retail', 'User');
 	public $components = array('Paginator');
 	//var $scaffold;
 	
@@ -20,8 +20,7 @@ class ProductsController extends AppController {
 		$conditions[] = array('Product.user_id' => $this->Auth->user('id'));
 		
 		$this->paginate = array(
-			'conditions' => $conditions,
-			'order' => array('Product.item_group' => 'ASC') 
+			'conditions' => $conditions
 		);
 		
 		$this->set('products', $this->paginate());
@@ -34,14 +33,6 @@ class ProductsController extends AppController {
 	public function add($name = ''){
 		if($this->request->is('post')){
 			if($this->Product->save($this->request->data)){
-				$itemGroup = $this->ItemGroup->find('first', array('conditions' => array('name' => trim($this->request->data['Product']['item_group'], " "), 
-												'ItemGroup.user_id' => $this->Auth->user('id'))));
-				if(empty($itemGroup)){
-					if($this->request->data['Product']['item_group'] != ''){
-						$productToSave['ItemGroup']['name'] = $this->request->data['Product']['item_group'];
-						$this->ItemGroup->save($productToSave);
-					}
-				}
 				$this->Session->setFlash('Product Added successfully.');
 			}else{
 				$this->Session->setFlash('An error occured. Please try again.');
@@ -55,9 +46,6 @@ class ProductsController extends AppController {
 			$this->Session->setFlash('Item already exists with this name. You can not add.');
 			$this->redirect($this->referer());
 		}
-		$item_groups = $this->ItemGroup->find('list', array('fields' => array('id', 'name'), 
-										'conditions' => array('ItemGroup.user_id' => $this->Auth->user('id'))));
-		$this->set('item_groups', $item_groups);	
 		$this->set('name', $name);	
 	}
 	
