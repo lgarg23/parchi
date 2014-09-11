@@ -2,7 +2,7 @@
 	echo $this->fetch('script');
 	echo $this->Html->script('jquery.min');
 ?>
-<table style = "max-width:40%;font-size:10px;width:40%;text-align:center;margin-left: 180px;margin-top: 350px;">
+<table style = "max-width:40%;font-size:10px;width:40%;text-align:center;margin-left: 210px;">
 	<tr>
 		<td colspan = "5" style = "text-align:center;"><b>Order</b></td>
 	</tr>
